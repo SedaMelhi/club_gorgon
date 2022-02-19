@@ -1,0 +1,188 @@
+body{
+    background: #000000; 
+    font-family: 'Myriad Pro', sans-serif;
+    color: #fff;
+}
+.body-overflow{
+    overflow: hidden;
+}
+.header{
+    height: calc(100vh - 90px);
+    text-align: center;
+    padding: 0 64px;
+    margin: 0 auto;
+    position: relative;
+    &__bg{
+        background: url(./../img/3D.webp) center/contain no-repeat;
+        height: calc(100vh - 90px);
+        position: absolute;
+        top:0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        &-dark{
+            height: calc(100vh - 90px);
+            position: absolute;
+            top:0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            background-color: #000000bb;
+            z-index: 2;
+        }
+    }
+    &__wrap{
+        display: flex;
+        height: calc(100vh - 90px);
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2; 
+    }
+    &__title{
+        font-family: 'Satoshi', sans-serif;
+        font-size: 8.5rem;
+        opacity: 0;
+        text-align: center;
+        &-wrap{
+            overflow: hidden;
+        }
+    }
+    
+    &__content{
+        flex-grow: 0.7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+    &__subtitle{
+        font-family: 'Satoshi', sans-serif;
+        margin: 20px 0 10px;
+        font-weight: 500;
+        font-size: 3rem;
+        display: flex;
+        justify-content:  center;
+        overflow: hidden; 
+       
+    }
+    &__club{
+        opacity: 0;
+        font-weight: 900;
+        color: #ff0000;
+    }
+    &__description{
+        font-size: 1.2rem;
+        opacity: 0;
+        font-weight: 400;
+    }
+    &__count{
+        color: #ff0000;
+        font-weight: 900;
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        opacity: 0;
+        position: relative;
+    }
+    &__data{
+        font-weight: 500;
+    }
+    &__networks{
+        position: fixed;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: 15px;
+        width: 100%;
+        display: flex;
+        opacity: 0;
+        justify-content: flex-end;
+        padding: 0 64px;
+        z-index: 3;
+        & a{
+            color: #fff;
+            margin-left: 20px;
+        }
+        font-size: 1.6rem;  
+        &_mobile{
+            display: none;
+        }
+    }
+    &__footer{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.typewriter{
+    margin-right: 2px;
+    opacity: 0;
+}
+
+.fa-discord:hover {
+    transition: 0.2s linear;
+    color: #8686db;
+  }
+  
+  .fa-twitter:hover {
+    transition: 0.2s linear;
+    color: #00acee;
+  }
+  
+  .fa-instagram:hover {
+    transition: 0.2s linear;
+    color: #e62a88;
+  }
+
+footer{
+    padding: 0 0 20px;
+}
+
+.animation{
+    .header__title{
+        animation: title-up 0.8s ease 1;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    .header__subtitle{ 
+        animation: text-zoom 0.7s 1 forwards;
+        animation-delay: 3.5s;
+    }
+    .header__club{
+        animation: subtitle-up .6s ease-out 1;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    .header__bg{
+        animation: blur 1.8s 1  ease-in-out;
+        animation-direction: alternate;   
+    }
+    .header__description{
+        animation: text-show 1.5s linear;
+        animation-delay: 4.5s;
+        animation-fill-mode: forwards;
+    }
+    .typewriter {
+        animation: subtitle-show .8s linear 1 forwards;
+        animation-delay: 1s;
+    }
+    .header__footer{
+        animation: text-show 1 1s linear;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+    .header__networks{
+        animation: text-show 1 1s linear forwards;
+        animation-delay: 5s;
+    }
+    .header__top{
+        animation: text-show 1 1s linear;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+    .nav_fixed{
+        animation: fixedMenu 1s forwards;
+    }
+}

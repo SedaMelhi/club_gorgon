@@ -1,0 +1,78 @@
+@keyframes title-up{
+    0%{
+        transform: translate(0, 184px);
+        opacity: 0;
+    }
+    100%{
+       
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes subtitle-up{
+    0%{
+        transform: translate(0, 84px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    100%{
+        filter: blur(0px);
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes text-show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.typewriter {
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    color: #ffffff00;
+    overflow: hidden;
+    background: linear-gradient(to right, white, white 50%, #ffffff00 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+}
+
+@keyframes subtitle-show{
+    0%{
+        background-position: 100% 0;
+        filter: blur(10px);
+    }
+    100%{
+        background-position: 0 100%;
+        filter: blur(0px);
+    }
+}
+
+@keyframes text-zoom {
+    0%{
+        font-size: 3rem;
+    }
+    100%{
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+}
+[data-aos="new-animation"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+  
+  }

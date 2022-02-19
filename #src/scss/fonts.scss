@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MeriadPro/MyriadPro-Black.woff');
+    src: url('../fonts/MeriadPro/MyriadPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MeriadPro/MyriadPro-Bold.woff');
+    src: url('../fonts/MeriadPro/MyriadPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MeriadPro/MyriadPro-Semibold.woff');
+    src: url('../fonts/MeriadPro/MyriadPro-Semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MeriadPro/MyriadPro-Regular.woff');
+    src: url('../fonts/MeriadPro/MyriadPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MeriadPro/MyriadPro-Light.woff');
+    src: url('../fonts/MeriadPro/MyriadPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fab {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   display: inline-block;
+   font-style: normal;
+   font-variant: normal;
+   text-rendering: auto;
+   line-height: 1; }
+.fa-discord:before {
+    content: "\f392"; 
+}
+ 
+.fa-twitter:before {
+    content: "\f099"; 
+}
+.fa-instagram:before {
+    content: "\f16d"; 
+}
+.fa-telegram:before {
+    content: "\f2c6"; }
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../webfonts/fa-brands-400.eot");
+    src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff") format("woff"); 
+}
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; 
+}

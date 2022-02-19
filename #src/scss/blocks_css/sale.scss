@@ -1,0 +1,60 @@
+.public{
+    position: relative;
+    padding-top: 80px;    
+}
+.public-sale{
+    justify-content: flex-start;
+}
+.focus{
+   padding-left: 26%;
+}
+.snake{
+    background: url(./../img/snake2.webp) no-repeat left/contain;
+    height: 100%;
+    width: 500px;
+    position: absolute;
+    top:-35%;
+    z-index: 1;
+} 
+.border{
+    border: 1px solid #0007FF;
+    padding: 50px 0px;
+    border-radius: 41px;
+}
+@media screen and (max-width: 970px) {
+    .border{
+        padding: 25px;
+        border-radius: 20px;
+
+    }
+    .focus{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .public{
+        .description{
+            margin-top: 0;
+            &__wrap{
+                justify-content: space-evenly;
+            }
+        }
+        .description__block{
+            min-height: auto;
+            margin-bottom: 30px;
+        }
+        .description__title{
+            font-size: 3.7rem;
+            text-align: left;
+        }
+    }
+    
+     .snake{
+         width: 60%;
+     }
+}
+
+@media screen and (max-width: 500px) {
+    .snake{
+        width: 100%;
+    }
+}
