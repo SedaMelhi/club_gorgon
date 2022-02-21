@@ -85,6 +85,7 @@
 
 html {
   font-size: 17px;
+  height: 100%;
 }
 
 body,
@@ -634,6 +635,7 @@ body {
   background: #000000;
   font-family: 'Myriad Pro', sans-serif;
   color: #fff;
+  height: 100%;
 }
 
 .body-overflow {
@@ -1155,7 +1157,6 @@ footer {
 
   100% {
     font-size: 1.4rem;
-    margin-top: 20px;
   }
 }
 
@@ -1166,7 +1167,6 @@ footer {
 
   100% {
     font-size: 1.4rem;
-    margin-top: 20px;
   }
 }
 
@@ -1608,12 +1608,24 @@ footer {
   background: url(./../img/team/3.jpg) center/contain no-repeat;
 }
 
+.team__photo_4 {
+  background: url(./../img/team/4.jpg) center/contain no-repeat;
+}
+
+.team__photo_5 {
+  background: url(./../img/team/5.jpg) center/contain no-repeat;
+}
+
 .team__photo_6 {
   background: url(./../img/team/6.jpg) center/contain no-repeat;
 }
 
 .team__photo_7 {
   background: url(./../img/team/7.jpg) center/contain no-repeat;
+}
+
+.team__photo_8 {
+  background: url(./../img/team/8.jpg) center/contain no-repeat;
 }
 
 .team__photo_9 {
@@ -1874,7 +1886,7 @@ footer {
   .header__bg,
   .header__bg-dark,
   .header__wrap {
-    height: calc(100vh - 125px);
+    height: 95%;
   }
 
   .header {
@@ -1906,7 +1918,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    bottom: 10px;
+    bottom: 25px;
     z-index: 3;
   }
 
@@ -1934,10 +1946,10 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     position: absolute;
+    height: 100vh;
+    top: -10vh;
     width: 100%;
     font-size: 3rem;
-    top: calc(-220px + 50vh);
-    margin-top: 20px;
   }
 
   .header__description {
@@ -2124,12 +2136,43 @@ footer {
     height: 58px;
   }
 }
+.btn{
+  display: block;
+  background-color: #f00;
+  width: 230px;
+  height: 50px;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 6rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 7px;
+}
 
+.animation .button{
+  animation: btn-hidden 1 3s 5s forwards;
+  opacity: 0;
+}
+@keyframes btn-hidden  {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 600px) {
   html {
     font-size: 12px;
   }
-
+  .btn{
+    margin-top: 3rem;
+    width: 170px;
+  }
   .header__title-wrap {
     height: 190px;
   }
@@ -2351,3 +2394,6 @@ footer {
     height: calc(100vh - 90px);
   }
 }
+
+
+
