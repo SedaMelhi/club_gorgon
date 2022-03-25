@@ -1527,16 +1527,34 @@ footer {
 
 .team__item:hover .info {
   opacity: 1;
-  -webkit-transition: 0.2s linear;
-  -o-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
-
+.team__item:hover .info i{
+  opacity: 0;
+  -webkit-transition: 0.7s linear;
+  -o-transition: 0.7s linear;
+  transition: 0.7s linear;
+  animation: 0.8s networks 1 forwards ease;
+}
+@keyframes networks{
+  0%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(5);
+  }
+  100%{
+    opacity: 0.8;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
 .team__item:hover .info p {
   top: 0;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .team__item:not(:last-child) {
@@ -1547,7 +1565,7 @@ footer {
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: #000814dd;
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
   opacity: 0;
   overflow: hidden;
@@ -1561,19 +1579,23 @@ footer {
   font-size: .9rem;
   text-align: center;
   line-height: 96px;
-  top: 48px;
+  top: 0;
 }
 
 .team__item .info a {
-  display: block;
+  display: flex;
   width: 96px;
   height: 96px;
   border-radius: 50%;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .team__item .info i {
-  padding-right: 5px;
+  font-size: 1.8rem;
+  opacity: 0;
+  
 }
 
 .team__item .info .instagram {
