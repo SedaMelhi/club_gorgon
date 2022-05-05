@@ -6,7 +6,7 @@
 }
 
 .map{
-    padding-top: 80px;
+    padding-top: 130px;
     text-align: center;
     .description{
         &__block{
@@ -16,6 +16,7 @@
         }
         &__title{
             text-align: center;
+            font-size: 4rem;
         }
         &__wrap{
             padding: 0 50px;
@@ -27,6 +28,7 @@
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
+        z-index: 2;
         text-align: center;
     }
     

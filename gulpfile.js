@@ -35,7 +35,6 @@ let {src, dest} = require('gulp'),
     clean_css = require("gulp-clean-css"),
     rename = require("gulp-rename"),
     uglify = require("gulp-uglify-es").default,
-    babel = require("gulp-babel"),
     imagemin = require("gulp-imagemin"),
     svgSprite = require("gulp-svg-sprite"),
     ttf2Woff = require('gulp-ttf2woff'),
@@ -87,10 +86,6 @@ function fonts(params){
 function js(){
     return src(path.src.js)
         .pipe(fileinclude())
-        .pipe(babel({
-            plugins: ['@babel/transform-runtime'],
-            presets: ['@babel/env']
-        }))
         .pipe(dest(path.build.js))
         .pipe(
             uglify()

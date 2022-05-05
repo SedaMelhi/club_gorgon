@@ -1,12 +1,61 @@
 .public{
     position: relative;
-    padding-top: 80px;    
-}
-.public-sale{
-    justify-content: flex-start;
-}
-.focus{
-   padding-left: 26%;
+    padding-top: 100px; 
+    .description{
+        &__wrap{
+            display: block;
+        }
+        &__title{
+            font-size: 5rem;
+            text-align: center;
+            background: radial-gradient(50% 50% at 50.09% 50%, rgb(11, 10, 83) 0%, rgb(2, 1, 155) 100%);
+            color: transparent;
+            background-clip: text;
+        } 
+        &__text{
+            b{
+                font-weight: 700;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
+    .steps{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 100px;
+        &__item{
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat';
+            font-size: 1.25rem;
+            line-height: 110%;
+            letter-spacing: 0.02em;
+            color: #999999;
+            width: 48%;
+            margin-bottom: 50px;
+        }
+        &__number{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+            span{
+                display: block;
+                position: absolute;
+                font-family: 'Druk Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5rem;
+                text-align: center;
+                letter-spacing: -0.05em;
+                color: #fff;
+            }
+        }
+    }   
 }
 .snake{
     background: url(./../img/snake2.webp) no-repeat left/contain;
@@ -16,41 +65,90 @@
     top:-35%;
     z-index: 1;
 } 
-.border{
-    border: 1px solid #0007FF;
-    padding: 50px 0px;
-    border-radius: 41px;
+.focus{
+    padding-top: 50px;
+    &__title{
+        font-family: 'Druk Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.05em;
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
+        background-clip: text;
+        color: transparent;
+        margin-top: 100px;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    &__block{
+        display: inline-block;
+        position: relative;
+    }
+    &__line{
+        width: 100%;
+        background: linear-gradient(45deg, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0.3) 100%);
+        height: 10px;
+        position: absolute;
+        bottom: -3px;
+        left: 7px;
+        z-index: 0;
+    }
+    &__item{
+        width: 400px;
+        height: 65px;
+        background: rgba(10, 10, 10, 0.7);
+        backdrop-filter: blur(48px);
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 110%;
+        letter-spacing: 0.02em;
+        background: radial-gradient(180.91% 100% at 50% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+        background-clip: text;
+        color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(2){
+            margin: 0 30px;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1376px;
+        padding: 0 60px;
+        margin: 60px auto 0;
+        &_2{
+            transform: scale(1);
+            margin-top: 30px;
+            padding: 0 100px;
+        }
+    }
 }
-@media screen and (max-width: 970px) {
-    .border{
-        padding: 25px;
-        border-radius: 20px;
-
-    }
-    .focus{
-        text-align: left;
-        padding-left: 10px;
-    }
-    .public{
-        .description{
-            margin-top: 0;
-            &__wrap{
-                justify-content: space-evenly;
-            }
-        }
-        .description__block{
-            min-height: auto;
-            margin-bottom: 30px;
-        }
-        .description__title{
-            font-size: 3.7rem;
-            text-align: left;
-        }
-    }
+.focus{
+    .mint{
+        &_blue{
+            margin: 160px auto;
+            width: 372px;
+            background: linear-gradient(180deg, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0.3) 100%);
     
-     .snake{
-         width: 60%;
-     }
+    
+        }
+        &_link{
+            width: 368px;
+            height: 56px;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {

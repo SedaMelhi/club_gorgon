@@ -1,76 +1,54 @@
 nav{
-    background-color: #000000;
-    transition: all 1s linear;
-    position: relative;
+    position: absolute;
     z-index: 5;
-}
-.nav__wrap{
-    height: 90px;
     width: 100%;
-    margin: 0 auto;
+    opacity: 0;
 }
-.nav_fixed{
-    position: fixed;
-    width: 100%;
+
+.nav{
+    max-width: 1376px;
+    padding: 0 40px;
     margin: 0 auto;
-    z-index: 5;
-}
-@keyframes fixedMenu{
-    0%{
-        opacity: 0;
-        transform: translateY(-90px);
-    }
-    100%{
-        opacity: .9;
-        transform: translateY(0px);
-        height: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    align-items: center;
+    &_fixed{
+        position: fixed;
+        background-color: #000c;
+        .nav{
+            animation: show-up 0.7s linear forwards;
+        }
+        
     }
 }
-.menu-mobile{
-    display: none;
+
+.logo{
+    margin-right: 80px;
+    img{
+        width: 80px;
+    }
 }
-.header__top{
-    width: 100%;
+.menu{
+    width:  1189px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    padding: 0 64px;
-    opacity: 0;
-}
-.menu{
-    display: flex;
-    justify-content: space-between;
-    flex-grow: .7;
-    margin-left: 35px;
-    &__link{
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.14rem;
+    line-height: 90%;
+    letter-spacing: -0.05rem;
+    height: 100%;
+    transition: 0.3s linear;
+    &__item{
+        color: rgba(255, 255, 255, 0.5);
         text-decoration: none;
-        font-family: 'Satoshi', sans-serif;
-        color: rgb(255, 255, 255);
-        font-weight: 500;
-        font-size: 1.1rem; 
-        position: relative;
-        &:after {
-            display: block;
-            margin-top: 3px;
-            content: "";
-            background-color: #be3a0e;
-            height: 2px;
-            width: 0%;
-            left: 50%;
-            position: absolute;
-            transition: width .22s ease-in-out;
-            transform: translateX(-50%);
-        }
-        &:hover::after{
-            width: 100%;
-        }   
+        text-align: center;
     }
-
+    &__item:hover{
+        color: #fff;
+    }
 }
-.logo{
-    img{
-        width: 90px;
-    }   
-}
-

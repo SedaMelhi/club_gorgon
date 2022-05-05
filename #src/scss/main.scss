@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 17px;
+    font-size: 14px;
 }
 body, p, h1, h2, h3, h4, h5, h6, ul, li, option{
     margin: 0;
@@ -10,4 +10,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, li, option{
 }
 ul{
     list-style: none;
+}
+body{
+    font-family: "Montserrat", sans-serif;
 }

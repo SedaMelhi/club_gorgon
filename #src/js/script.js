@@ -1,4 +1,4 @@
-
+const body = document.querySelector('body')
 window.addEventListener("load", function() {
     //window.setTimeout(start, 1000)
     //function start(){}
@@ -17,14 +17,17 @@ window.addEventListener("load", function() {
         else if(i < number)
         setTimeout(() => countAnimation(i + 1), 0.1)
     }
-    setTimeout(() => countAnimation(1), 6000)
+    setTimeout(() => countAnimation(1), 8000)
     
     //убираем экран загрузки
     document.querySelector(".load").style.display = "none";
     
    
 })
-
+const text = document.querySelectorAll(".arts__text path")
+for(let i of text){
+    console.log(i.getTotalLength())
+}
 
 // фиксация меню
 window.addEventListener("scroll", function () {
@@ -41,7 +44,7 @@ window.addEventListener("scroll", function () {
 
 
 
-
+/** 
 //меню для моб. версии
 
 const menuGmb = document.querySelector(".menu-mobile")
@@ -80,8 +83,8 @@ menuGmb.addEventListener('click', handleMenu)
 
 
 //Для сокрытия социальных сетей у блока team
-let networks = document.querySelector(".header__networks")
-let networksMobile = document.querySelector(".header__networks_mobile")
+let networks = document.querySelector(".networks")
+let networksMobile = document.querySelector(".networks_mobile")
 // Получаем нужный элемент
 var element = document.querySelector('.team');
 
@@ -142,9 +145,7 @@ menu_items.forEach(item => item.addEventListener("click", function (e) {
     
 }))
 
-
-
-
+*/
 
     
 
@@ -185,3 +186,118 @@ $('.owl-mobile').owlCarousel({
     center: true,
 
 })
+
+
+
+
+
+var btnPlayBlock = document.querySelector(".video__btn-block");
+var btnPlay = document.querySelector(".video__btn");
+const circles= document.querySelectorAll(".video__circle")
+var blockForVideo = document.querySelector(".video__block");
+let a = 1
+
+if (btnPlayBlock != null) {
+    btnPlayBlock.addEventListener("click", function (event) {
+        
+        for (let i of circles){
+            i.classList.add('video__circle-anim_' + a)
+            a++
+        }  
+        btnPlay.classList.add('video__btn_anim')  
+        startVideo();
+           
+    });
+}
+
+function startVideo() {
+    blockForVideo.classList.add("video__hidden")
+    const youtube = document.getElementsByTagName('iframe')
+    setTimeout(function () {
+        youtube[0].src = youtube[0].src + '?rel=0&autoplay=1'
+      }, 1000);
+}
+
+class ItcAccordion {
+    constructor(target, config) {
+      this._el = typeof target === 'string' ? document.querySelector(target) : target;
+      const defaultConfig = {
+        alwaysOpen: true,
+        duration: 350
+      };
+      this._config = Object.assign(defaultConfig, config);
+      this.addEventListener();
+    }
+    addEventListener() {
+      this._el.addEventListener('click', (e) => {
+        const elHeader = e.target.closest('.accordion__header');
+        if (!elHeader) {
+          return;
+        }
+        if (!this._config.alwaysOpen) {
+          const elOpenItem = this._el.querySelector('.accordion__item_show');
+          if (elOpenItem) {
+            elOpenItem !== elHeader.parentElement ? this.toggle(elOpenItem) : null;
+          }
+        }
+        this.toggle(elHeader.parentElement);
+      });
+    }
+    show(el) {
+      const elBody = el.querySelector('.accordion__body');
+      if (elBody.classList.contains('collapsing') || el.classList.contains('accordion__item_show')) {
+        return;
+      }
+      elBody.style['display'] = 'block';
+      const height = elBody.offsetHeight;
+      elBody.style['height'] = 0;
+      elBody.style['overflow'] = 'hidden';
+      elBody.style['transition'] = `height ${this._config.duration}ms ease`;
+      elBody.classList.add('collapsing');
+      el.classList.add('accordion__item_slidedown');
+      elBody.offsetHeight;
+      elBody.style['height'] = `${height}px`;
+      window.setTimeout(() => {
+        elBody.classList.remove('collapsing');
+        el.classList.remove('accordion__item_slidedown');
+        elBody.classList.add('collapse');
+        el.classList.add('accordion__item_show');
+        elBody.style['display'] = '';
+        elBody.style['height'] = '';
+        elBody.style['transition'] = '';
+        elBody.style['overflow'] = '';
+      }, this._config.duration);
+    }
+    hide(el) {
+      const elBody = el.querySelector('.accordion__body');
+      if (elBody.classList.contains('collapsing') || !el.classList.contains('accordion__item_show')) {
+        return;
+      }
+      elBody.style['height'] = `${elBody.offsetHeight}px`;
+      elBody.offsetHeight;
+      elBody.style['display'] = 'block';
+      elBody.style['height'] = 0;
+      elBody.style['overflow'] = 'hidden';
+      elBody.style['transition'] = `height ${this._config.duration}ms ease`;
+      elBody.classList.remove('collapse');
+      el.classList.remove('accordion__item_show');
+      elBody.classList.add('collapsing');
+      window.setTimeout(() => {
+        elBody.classList.remove('collapsing');
+        elBody.classList.add('collapse');
+        elBody.style['display'] = '';
+        elBody.style['height'] = '';
+        elBody.style['transition'] = '';
+        elBody.style['overflow'] = '';
+      }, this._config.duration);
+    }
+    toggle(el) {
+      el.classList.contains('accordion__item_show') ? this.hide(el) : this.show(el);
+    }
+  }
+
+
+  new ItcAccordion(document.querySelector('.accordion'), {
+    alwaysOpen: true
+  });
+
