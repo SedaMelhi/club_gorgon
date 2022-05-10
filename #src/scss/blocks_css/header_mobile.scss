@@ -51,6 +51,9 @@
 
 
 @media screen and (max-width: 600px){
+    header{
+        height: 100vh;
+    }
     .focus{
         display: none;
     }
@@ -58,6 +61,7 @@
         padding: 0 24px 40px;
         justify-content: space-between;
         padding-top: 84px;
+        height: 100%;
         &__title{
             display: block;
             margin-bottom: 30px;

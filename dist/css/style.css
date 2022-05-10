@@ -3018,6 +3018,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
   .focus {
     display: none;
   }
@@ -3028,6 +3032,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 84px;
+    height: 100%;
   }
 
   .header__title {
