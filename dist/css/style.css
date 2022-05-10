@@ -3031,8 +3031,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 84px;
-    height: 100%;
+    top: 84px;
+    height: calc(100% - 84px);
   }
 
   .header__title {
@@ -3054,7 +3054,7 @@ body {
   }
 
   .header .title__wrap svg {
-    width: 100%;
+    width: 90%;
   }
 
   .header__subtitle {
