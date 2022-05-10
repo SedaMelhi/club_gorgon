@@ -26,6 +26,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 100px;
+        overflow: hidden;
         &__item{
             display: flex;
             align-items: center;

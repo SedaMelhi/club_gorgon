@@ -846,245 +846,13 @@ body {
   margin-bottom: 40px;
 }
 
-/**
-@media (max-width: 1100px){
-    html{
-        font-size: 15px;
-    }
-    .logo{
-        img{
-            width: 70px;
-        }   
-    }
-}
-@media (max-width: 1000px) and (min-height: 600px){
-    html{
-        font-size: 14px;
-    }
-    .logo{
-        img{
-            width: 60px;
-        }   
-    }
-}
-@media screen and (max-width: 970px){
-    header, .header, .header__bg, .header__bg-dark, .header__wrap{
-        height: calc(100vh - 125px);
-    }
-    .header{
-        padding: 0 30px;
-        &__wrap{
-            justify-content: space-around;
-        }
-        &__content{
-            flex-grow: 0;
-        }
-        &__networks{
-            bottom: 30px;
-            margin: 0;
-            &_pc{
-                display: none;
-            }
-            &_mobile{
-                display: flex;
-                position: fixed;
-                bottom: 10px;
-                z-index: 3;
-            }
-        }
-        &__top{
-            width: 100vw;
-            padding: 0 30px;
-        }
-        &__title{
-            max-width: 400px;
-            margin: 0 auto;
-            line-height: .8;
-            &-wrap{
-                height: 220px;
-            }
-        }
-        &__subtitle{
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            width: 100%;
-            font-size: 3rem;
-            top: calc(-220px + 50vh);
-            margin-top:20px;
-        }
-        &__description{
-            max-width: 460px;
-            margin: 0 auto;
-        }
-        &__footer{
-            flex-direction: column;
-            padding-bottom: 20px;
-            font-size: 1.2rem;
-        }
-        &__networks{
-            justify-content: space-around;
-            a{
-                margin: 0;
-            }
-        }
-    }
-    .typewriter{
-        font-weight: 700;
-    }
-    
-    @keyframes text-zoom {
-        0%{
-            font-size: 3rem;
-            opacity: 1;
-            transition: 1s linear;
-        }
-        30%{
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        100%{
-            opacity: 1;
-            font-size: 2rem;   
-            position: static;
-            height: auto;
-        }
-    }
-    .description{
-        padding-top: 80px;
-        &__wrap{
-            flex-direction: column;
-            justify-content: flex-start;
-           
-        }
-        &__block{
-            width: 100%;
-            justify-content: flex-start;
-            &_size{
-                width: 100%;
-            }
-            span{
-                display: block;
-                margin-bottom: 10px;
-            }
-        }
-        &__bg{
-            position: absolute;
-            min-height: 100vh;
-        }
-        &__art{
-            background-position: center;
-        }
-        &__title{
-            font-size: 4rem;
-            text-align: center;
-        }
-        &__subtitle{
-            font-weight: 700;
-            text-align: center;
-        }
-    }
+.header__title {
+  display: none;
 }
 
-@media screen and (max-width: 600px){
-    html{
-        font-size: 12px;
-    }
-    .header{
-        &__title{
-            &-wrap{
-                height: 190px;
-            }
-        }
-        &__description{
-            font-size: 1.5rem;
-        }
-        &__bg{
-            background-size: 80%;
-        }
-        &__top{
-            width: 100vw;
-        }
-      
-    }
+.header__description i {
+  font-style: normal;
 }
-@media screen and (max-width: 460px){
-    .header{
-        &__title{
-            font-size: 7.5rem;
-            font-weight: 900;
-        }
-        &__subtitle{
-            margin-bottom: 20px;
-        }
-    }
-   
-}
-
-@media screen and (max-width: 400px){
-    .header{
-        &__title{
-            font-size: 6.5rem;
-            font-weight: 900;
-            &-wrap{
-                height: 145px;
-            }
-        }
-        &__subtitle{
-            margin-bottom: 10px;
-        }
-    }
-   
-}
-
-
-@media screen and (max-width: 350px){
-    html{
-        font-size: 8px;
-    }
-    .header__title-wrap{
-        height: 100px;
-    }
-    .logo {
-        width: 60px;
-    }
-    .menu-mobile {
-        display: block;
-        width: 45px;
-    }
-    .header__top{
-        padding: 0 20px;
-        height: 60px;
-    }
-    @keyframes fixedMenu{
-        0%{
-            opacity: 0;
-            transform: translateY(-90px);
-        }
-        100%{
-            opacity: .9;
-            transform: translateY(0px);
-            height: 60px;
-        }
-    }
-    .description__text{
-        font-size: 1.7rem;
-    }
-    .description{
-        min-height: calc(100vh - 60px);
-        margin-top: 60px;
-        position: relative;
-    }
-    .nav__wrap{
-        height: 60px;
-    }
-    .header, .header__bg, .header__bg-dark, .header__wrap, header {
-        height: calc(100vh - 90px);
-    }
-}
-
-
-**/
 
 .description {
   min-height: 100vh;
@@ -2234,6 +2002,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 100px;
+  overflow: hidden;
 }
 
 .public .steps__item {
@@ -2965,6 +2734,59 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1480px) {
+  .header {
+    padding: 0 80px 40px;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .description__title {
+    font-size: 6rem;
+  }
+
+  .description .star {
+    top: 79px;
+    width: 125px;
+  }
+
+  .description__wrap {
+    padding: 0 90px;
+  }
+}
+
+@media screen and (max-width: 1355px) {
+  .description__title {
+    font-size: 5.4rem;
+  }
+
+  .header {
+    padding: 0 95px 40px;
+  }
+
+  .mint,
+  .buyBtn {
+    max-width: 270px;
+  }
+
+  .buyBtn_link,
+  .mint_link {
+    width: calc(100% - 4px);
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .header__description {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1209px) {
+  html {
+    font-size: 13px;
+  }
+}
+
 @media screen and (max-width: 1130px) {
   .carousel__wrap {
     max-width: 850px;
@@ -3196,6 +3018,108 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .focus {
+    display: none;
+  }
+
+  .header {
+    padding: 0 24px 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 84px;
+  }
+
+  .header__title {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .header .title__wrap {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .header .title__wrap svg {
+    width: 100%;
+  }
+
+  .header__subtitle {
+    width: 270px;
+    position: static;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+
+  .header__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__description {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .header__description i {
+    display: none;
+  }
+
+  .header__tint {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .svg_title {
+    display: none;
+  }
+
+  .mint,
+  .buyBtn {
+    margin: 0 auto;
+  }
+
+  .mint {
+    margin-bottom: 12px;
+  }
+
+  .buyBtn {
+    margin-bottom: 30px;
+  }
+
+  .networks {
+    right: auto;
+    left: 15px;
+  }
+
+  .mint,
+  .buyBtn {
+    width: 260px;
+  }
+
+  .logo img {
+    width: 90%;
+  }
+
   .owl-desktop,
   .carousel__desktop {
     display: none;
@@ -3297,5 +3221,16 @@ body {
 
   .carousel__title {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__subtitle {
+    width: 100%;
+  }
+
+  .mint,
+  .buyBtn {
+    width: 220px;
   }
 }
