@@ -3057,8 +3057,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .header .title__wrap svg {
@@ -3080,6 +3081,7 @@ body {
             justify-content: center;
     margin: 0 auto;
     font-size: 1.2rem;
+    margin-bottom: 35px;
   }
 
   .header__bottom {
