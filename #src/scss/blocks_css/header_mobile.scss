@@ -151,6 +151,37 @@
     .logo img{
         width: 90%;
     }
+
+    .description{
+        margin-bottom: 75px;
+        &__title{
+            font-size: 3.2rem;
+        }
+        .star{
+            display: none;
+        }
+        &__wrap{
+            padding: 0 24px 0 52px;
+            flex-direction: column;
+            > div{
+                width: 100%;
+            }
+        }
+        &__bg{
+            width: 100%;
+            position: absolute;
+            right: 0;
+            
+        }
+        &__art{
+            background-position: center bottom;
+            top: auto;
+            bottom: -75px;
+        }
+        &__block{
+            overflow: visible;
+        }
+    }
 }
 
 @media screen and (max-width: 320px){

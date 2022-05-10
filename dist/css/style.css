@@ -3299,6 +3299,46 @@ body {
   .logo img {
     width: 90%;
   }
+
+  .description {
+    margin-bottom: 75px;
+  }
+
+  .description__title {
+    font-size: 3.2rem;
+  }
+
+  .description .star {
+    display: none;
+  }
+
+  .description__wrap {
+    padding: 0 24px 0 52px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .description__wrap > div {
+    width: 100%;
+  }
+
+  .description__bg {
+    width: 100%;
+    position: absolute;
+    right: 0;
+  }
+
+  .description__art {
+    background-position: center bottom;
+    top: auto;
+    bottom: -75px;
+  }
+
+  .description__block {
+    overflow: visible;
+  }
 }
 
 @media screen and (max-width: 600px) {
