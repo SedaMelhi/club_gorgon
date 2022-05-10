@@ -3020,6 +3020,7 @@ body {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
+    padding-top: 84px;
   }
 
   .focus {
@@ -3031,8 +3032,14 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    top: 84px;
-    height: calc(100% - 84px);
+    position: static;
+    height: 100%;
+  }
+
+  .header__bg {
+    height: 100%;
+    margin: 0;
+    top: 0;
   }
 
   .header__title {
@@ -3055,6 +3062,10 @@ body {
 
   .header .title__wrap svg {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
   }
 
   .header__subtitle {

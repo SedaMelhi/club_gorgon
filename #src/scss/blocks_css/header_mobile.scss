@@ -53,6 +53,7 @@
 @media screen and (max-width: 600px){
     header{
         height: 100vh;
+        padding-top: 84px;
     }
     .focus{
         display: none;
@@ -60,8 +61,14 @@
     .header{
         padding: 0 24px 40px;
         justify-content: space-between;
-        top: 84px;
-        height: calc(100% - 84px);
+        position: static;
+        height: 100%;
+        
+        &__bg{
+            height: 100%;
+            margin: 0;
+            top: 0;
+        }
         &__title{
             display: block;
             margin-bottom: 30px;
@@ -74,6 +81,8 @@
                 justify-content: space-around;
                svg{
                     width: 90%;
+                    display: flex;
+                    margin: 0 auto;
                }
             }
         }
