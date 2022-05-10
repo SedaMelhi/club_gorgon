@@ -21,10 +21,8 @@ window.addEventListener("load", function() {
     
     //убираем экран загрузки
     document.querySelector(".load").style.display = "none";
-    this.setTimeout(() => {
-      let vh = window.innerHeight
-      document.querySelector(".header").style.height = `calc(${vh}px - 84px)`;
-    }, 5000)
+    let vh = window.innerHeight
+    document.querySelector(".header").style.height = `calc(${vh}px - 84px)`;
    
 })
 const text = document.querySelectorAll(".arts__text path")

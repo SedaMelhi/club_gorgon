@@ -3040,7 +3040,7 @@ body {
     height: 100%;
     margin: 0;
     top: 0;
-    background-size: 80%;
+    right: -100%;
   }
 
   .header__title {
