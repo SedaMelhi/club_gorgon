@@ -66,11 +66,14 @@
         justify-content: space-between;
         position: static;
         height: 100%;
-        
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         &__bg{
             height: 100%;
-            width: 100vw;
-            overflow: hidden;
+           
+            margin: 0 auto;
             margin: 0;
             top: 0;
             background-size: 80%;
@@ -182,6 +185,9 @@
             overflow: visible;
         }
     }
+    .arts__text img{
+        width: 71%;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -192,3 +198,4 @@
         width: 220px;
     }
 }
+
