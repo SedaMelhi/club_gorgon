@@ -3042,7 +3042,7 @@ body {
     top: 0;
     left: auto;
     right: -55%;
-    background-size: 110%;
+    width: 110%;
   }
 
   .header__title {
