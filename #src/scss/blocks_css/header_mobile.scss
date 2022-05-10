@@ -54,7 +54,6 @@
     header{
         height: 100vh;
         padding-top: 84px;
-        overflow: hidden;
     }
     .focus{
         display: none;
@@ -63,20 +62,13 @@
         padding: 0 24px 40px;
         justify-content: space-between;
         position: static;
-        height: calc(100% - 40px);
-        overflow: hidden;
+        height: 100%;
+        
         &__bg{
             height: 100%;
             margin: 0;
             top: 0;
-            width: 100%;
-            background-image: url(../img/3D1.png);
-            background-position: right;
-            background-size: 50%;
-            overflow: hidden;
-            &_mask{
-                display: none;
-            }
+            background-size: 80%;
         }
         &__title{
             display: block;
@@ -91,7 +83,7 @@
                svg{
                     width: 90%;
                     display: flex;
-                    
+                    margin: 0 auto;
                }
             }
         }
@@ -100,7 +92,8 @@
             position: static;
             flex-wrap: wrap;
             text-align: left;
-            
+            justify-content: center;
+            margin: 0 auto;
             font-size: 1.2rem;
             margin-bottom: 35px;
         }
@@ -109,8 +102,6 @@
         }
         &__description{
             order: 1;
-            text-align: left;
-            
             i{
                 display: none;
             }
@@ -126,7 +117,7 @@
         display: none;
     }
     .mint, .buyBtn{
-        
+        margin: 0 auto;
         
     }
     .mint{
@@ -136,9 +127,12 @@
         margin-bottom: 30px;
     }
     .networks{
-        right: 15px;
+        right: auto;
+        left: 15px;
     }
-    
+    .mint, .buyBtn{
+        width: 260px;
+    }
     .logo img{
         width: 90%;
     }

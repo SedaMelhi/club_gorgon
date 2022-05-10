@@ -3021,7 +3021,6 @@ body {
   header {
     height: 100vh;
     padding-top: 84px;
-    overflow: hidden;
   }
 
   .focus {
@@ -3034,23 +3033,14 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: static;
-    height: calc(100% - 40px);
-    overflow: hidden;
+    height: 100%;
   }
 
   .header__bg {
     height: 100%;
     margin: 0;
     top: 0;
-    width: 100%;
-    background-image: url(../img/3D1.png);
-    background-position: right;
-    background-size: 50%;
-    overflow: hidden;
-  }
-
-  .header__bg_mask {
-    display: none;
+    background-size: 80%;
   }
 
   .header__title {
@@ -3077,6 +3067,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
   }
 
   .header__subtitle {
@@ -3085,6 +3076,10 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
     font-size: 1.2rem;
     margin-bottom: 35px;
   }
@@ -3100,7 +3095,6 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    text-align: left;
   }
 
   .header__description i {
@@ -3118,6 +3112,11 @@ body {
     display: none;
   }
 
+  .mint,
+  .buyBtn {
+    margin: 0 auto;
+  }
+
   .mint {
     margin-bottom: 12px;
   }
@@ -3127,7 +3126,13 @@ body {
   }
 
   .networks {
-    right: 15px;
+    right: auto;
+    left: 15px;
+  }
+
+  .mint,
+  .buyBtn {
+    width: 260px;
   }
 
   .logo img {
