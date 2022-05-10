@@ -591,7 +591,7 @@ nav {
 }
 
 .hamburger .line:nth-child(2) {
-  margin: 6px auto;
+  margin: 8px auto;
 }
 
 #hamburger-1.is-active .line:nth-child(2) {
@@ -599,9 +599,9 @@ nav {
 }
 
 #hamburger-1.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(5px) rotate(45deg);
-      -ms-transform: translateY(5px) rotate(45deg);
-          transform: translateY(5px) rotate(45deg);
+  -webkit-transform: translateY(9px) rotate(45deg);
+      -ms-transform: translateY(9px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
 }
 
 #hamburger-1.is-active .line:nth-child(3) {
@@ -2987,7 +2987,6 @@ body {
     display: flex;
     -webkit-animation: menuOpen 1s linear;
             animation: menuOpen 1s linear;
-    overflow: hidden;
   }
 
 @-webkit-keyframes menuOpen {
@@ -3019,9 +3018,11 @@ body {
 }
 
   .menu_close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-animation: menuClose 1s linear forwards;
             animation: menuClose 1s linear forwards;
-    overflow: hidden;
   }
 
 @-webkit-keyframes menuClose {
@@ -3069,8 +3070,6 @@ body {
   .menu-mobile {
     display: block;
     width: 45px;
-    top: -3px;
-    position: relative;
     cursor: pointer;
     z-index: 5;
     -webkit-transition: .5s linear;
@@ -3164,7 +3163,8 @@ body {
 
 @media screen and (max-width: 750px) {
   body,
-  html {
+  html,
+  .menu {
     overflow-x: hidden;
   }
 
