@@ -56,6 +56,7 @@ function handleMenu() {
     if(getComputedStyle(menuGmb).display == "none"){
         return false;
     }
+    document.querySelector(".hamburger").classList.toggle("is-active");
     if(menuClose) {
         menuGmb.classList.add('menu-mobile_open')
         menuGmb.classList.remove('menu-mobile_close')
@@ -79,11 +80,6 @@ menu_items.forEach(item => item.addEventListener("click", handleMenu))
 menuGmb.addEventListener('click', handleMenu)
 
 
-$(document).ready(function(){
-  $(".hamburger").click(function(){
-    $(this).toggleClass("is-active");
-  });
-});
 
 //Для сокрытия социальных сетей у блока team
 let networks = document.querySelector(".networks")
