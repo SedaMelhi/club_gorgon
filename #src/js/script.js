@@ -21,8 +21,6 @@ window.addEventListener("load", function() {
     
     //убираем экран загрузки
     document.querySelector(".load").style.display = "none";
-    let vh = window.innerHeight
-    document.querySelector(".header").style.height = `calc(${vh}px - 84px)`;
    
 })
 const text = document.querySelectorAll(".arts__text path")
@@ -30,10 +28,6 @@ for(let i of text){
     console.log(i.getTotalLength())
 }
 
-window.addEventListener('resize', function(){
-    let vh = window.innerHeight
-    document.querySelector(".header").style.height = `calc(${vh}px - 84px)`;
-})
 // фиксация меню
 window.addEventListener("scroll", function () {
     const headerSize = this.document.querySelector(".header").offsetHeight;

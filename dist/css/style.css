@@ -3033,14 +3033,16 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: static;
-    height: 100%;
+    height: calc(100% - 40px);
   }
 
   .header__bg {
     height: 100%;
     margin: 0;
     top: 0;
-    right: -100%;
+    left: auto;
+    right: -55%;
+    background-size: 110%;
   }
 
   .header__title {

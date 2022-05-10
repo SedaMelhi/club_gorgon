@@ -62,13 +62,15 @@
         padding: 0 24px 40px;
         justify-content: space-between;
         position: static;
-        height: 100%;
+        height: calc(100% - 40px);
         
         &__bg{
             height: 100%;
             margin: 0;
             top: 0;
-            right: -100%;
+            left: auto;
+            right: -55%;
+            background-size: 110%;
         }
         &__title{
             display: block;
