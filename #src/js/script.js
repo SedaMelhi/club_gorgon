@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
     document.querySelector(".load").style.display = "none";
    
 })
-const text = document.querySelectorAll(".arts__text path")
+const text = document.querySelectorAll(".header__title path")
 for(let i of text){
     console.log(i.getTotalLength())
 }
@@ -43,13 +43,13 @@ window.addEventListener("scroll", function () {
 
 
 
-/** 
+
 //меню для моб. версии
 
 const menuGmb = document.querySelector(".menu-mobile")
-const menu_items = document.querySelectorAll(".menu__link");
+const menu_items = document.querySelectorAll(".menu__item");
 const menu = document.querySelector(".menu")
-const body = document.querySelector("body") //чтобы не было скролла при открытом меню
+
 let menuClose = true
 
 function handleMenu() {
@@ -79,13 +79,17 @@ menu_items.forEach(item => item.addEventListener("click", handleMenu))
 menuGmb.addEventListener('click', handleMenu)
 
 
-
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});
 
 //Для сокрытия социальных сетей у блока team
 let networks = document.querySelector(".networks")
 let networksMobile = document.querySelector(".networks_mobile")
 // Получаем нужный элемент
-var element = document.querySelector('.team');
+var element = document.querySelector('.accordion');
 
 var Visible = function (target) {
   // Все позиции элемента
@@ -144,7 +148,7 @@ menu_items.forEach(item => item.addEventListener("click", function (e) {
     
 }))
 
-*/
+
 
     
 

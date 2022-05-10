@@ -50,7 +50,10 @@
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
+    body, html{
+        overflow-x: hidden;
+    }
     header{
         height: 100vh;
         padding-top: 84px;
@@ -66,9 +69,16 @@
         
         &__bg{
             height: 100%;
+            width: 100vw;
+            overflow: hidden;
             margin: 0;
             top: 0;
             background-size: 80%;
+            &_mask{
+                height: 100%;
+                top: 0;
+                background-size: 80%;
+            }
         }
         &__title{
             display: block;
@@ -84,6 +94,8 @@
                     width: 90%;
                     display: flex;
                     margin: 0 auto;
+                   
+                    
                }
             }
         }
@@ -101,6 +113,9 @@
             flex-direction: column;
         }
         &__description{
+            min-width: 100%;
+            text-align: center;
+            margin: 0;
             order: 1;
             i{
                 display: none;

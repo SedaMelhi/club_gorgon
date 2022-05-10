@@ -576,6 +576,40 @@ nav {
   color: #fff;
 }
 
+.menu-mobile {
+  display: none;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: #ecf0f1;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger .line:nth-child(2) {
+  margin: 6px auto;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(5px) rotate(45deg);
+      -ms-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+      -ms-transform: translateY(-13px) rotate(-45deg);
+          transform: translateY(-13px) rotate(-45deg);
+}
+
 body {
   background: #000000;
   color: #fff;
@@ -838,6 +872,7 @@ body {
   z-index: 9999;
   bottom: 50px;
   right: 40px;
+  opacity: 0;
 }
 
 .networks i {
@@ -1150,6 +1185,76 @@ body {
 .animation #main-title path:nth-child(10) {
   stroke-dasharray: 521;
   stroke-dashoffset: 521;
+  -webkit-animation: line-anim 1.5s ease forwards 2.4s;
+          animation: line-anim 1.5s ease forwards 2.4s;
+}
+
+.animation .header__title path:nth-child(1) {
+  stroke-dasharray: 322;
+  stroke-dashoffset: 322;
+  -webkit-animation: line-anim 1.5s ease forwards 2s;
+          animation: line-anim 1.5s ease forwards 2s;
+}
+
+.animation .header__title path:nth-child(2) {
+  stroke-dasharray: 148;
+  stroke-dashoffset: 148;
+  -webkit-animation: line-anim 1.5s ease forwards 2.1s;
+          animation: line-anim 1.5s ease forwards 2.1s;
+}
+
+.animation .header__title path:nth-child(3) {
+  stroke-dasharray: 241;
+  stroke-dashoffset: 241;
+  -webkit-animation: line-anim 1.5s ease forwards 2.4s;
+          animation: line-anim 1.5s ease forwards 2.4s;
+}
+
+.animation .header__title path:nth-child(4) {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  -webkit-animation: line-anim 1.5s ease forwards 2.7s;
+          animation: line-anim 1.5s ease forwards 2.7s;
+}
+
+.animation .header__title path:nth-child(5) {
+  stroke-dasharray: 387;
+  stroke-dashoffset: 387;
+  -webkit-animation: line-anim 1.5s ease forwards 1.5s;
+          animation: line-anim 1.5s ease forwards 1.5s;
+}
+
+.animation .header__title path:nth-child(6) {
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+  -webkit-animation: line-anim 1.5s ease forwards 2.1s;
+          animation: line-anim 1.5s ease forwards 2.1s;
+}
+
+.animation .header__title path:nth-child(7) {
+  stroke-dasharray: 194;
+  stroke-dashoffset: 194;
+  -webkit-animation: line-anim 1.5s ease forwards 1.8s;
+          animation: line-anim 1.5s ease forwards 1.8s;
+}
+
+.animation .header__title path:nth-child(8) {
+  stroke-dasharray: 335;
+  stroke-dashoffset: 335;
+  -webkit-animation: line-anim 1.5s ease forwards 2.4s;
+          animation: line-anim 1.5s ease forwards 2.4s;
+}
+
+.animation .header__title path:nth-child(9) {
+  stroke-dasharray: 226;
+  stroke-dashoffset: 226;
+  -webkit-animation: line-anim 1.5s ease forwards 2.1s;
+          animation: line-anim 1.5s ease forwards 2.1s;
+}
+
+.animation .header__title path:nth-child(10) {
+  stroke-dasharray: 242;
+  stroke-dashoffset: 242;
   -webkit-animation: line-anim 1.5s ease forwards 2.4s;
           animation: line-anim 1.5s ease forwards 2.4s;
 }
@@ -1504,6 +1609,12 @@ body {
           animation: fill 2.5s linear forwards 5.6s;
 }
 
+.animation .header__title svg {
+  fill: transparent;
+  -webkit-animation: fill 2.5s linear forwards 5.6s;
+          animation: fill 2.5s linear forwards 5.6s;
+}
+
 .animation .header__bg {
   -webkit-animation: show-bg 2s ease forwards 3.7s;
           animation: show-bg 2s ease forwards 3.7s;
@@ -1519,6 +1630,11 @@ body {
           animation: show-down 0.7s linear forwards 7s;
 }
 
+.animation .networks {
+  -webkit-animation: networks 0.7s linear forwards 8s;
+          animation: networks 0.7s linear forwards 8s;
+}
+
 [data-aos="new-animation"] {
   opacity: 0;
   -webkit-transition-property: opacity, -webkit-transform;
@@ -1530,6 +1646,34 @@ body {
 
 [data-aos="new-animation"].aos-animate {
   opacity: 1;
+}
+
+@-webkit-keyframes nerworks {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes nerworks {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .arts {
@@ -2843,6 +2987,7 @@ body {
     display: flex;
     -webkit-animation: menuOpen 1s linear;
             animation: menuOpen 1s linear;
+    overflow: hidden;
   }
 
 @-webkit-keyframes menuOpen {
@@ -2874,11 +3019,9 @@ body {
 }
 
   .menu_close {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-animation: menuClose 1s linear forwards;
             animation: menuClose 1s linear forwards;
+    overflow: hidden;
   }
 
 @-webkit-keyframes menuClose {
@@ -2925,7 +3068,9 @@ body {
 
   .menu-mobile {
     display: block;
-    width: 60px;
+    width: 45px;
+    top: -3px;
+    position: relative;
     cursor: pointer;
     z-index: 5;
     -webkit-transition: .5s linear;
@@ -3017,7 +3162,12 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
   header {
     height: 100vh;
     padding-top: 84px;
@@ -3038,7 +3188,15 @@ body {
 
   .header__bg {
     height: 100%;
+    width: 100vw;
+    overflow: hidden;
     margin: 0;
+    top: 0;
+    background-size: 80%;
+  }
+
+  .header__bg_mask {
+    height: 100%;
     top: 0;
     background-size: 80%;
   }
@@ -3092,6 +3250,9 @@ body {
   }
 
   .header__description {
+    min-width: 100%;
+    text-align: center;
+    margin: 0;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -3138,7 +3299,9 @@ body {
   .logo img {
     width: 90%;
   }
+}
 
+@media screen and (max-width: 600px) {
   .owl-desktop,
   .carousel__desktop {
     display: none;

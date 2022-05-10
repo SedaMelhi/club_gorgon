@@ -8,6 +8,7 @@
         opacity: 0;
         animation: svg-show 1s ease forwards 2s;
     }
+    
 } 
 
 @keyframes line-anim{
@@ -15,6 +16,7 @@
         stroke-dashoffset: 0;
     }
 }
+
 
 @keyframes fill{
     0%{
@@ -79,7 +81,58 @@
     }
 }
 
-
+.animation{
+    .header__title path:nth-child(1){
+        stroke-dasharray: 322;
+        stroke-dashoffset: 322;
+        animation: line-anim 1.5s ease forwards 2s;
+    }
+    .header__title path:nth-child(2){
+        stroke-dasharray: 148;
+        stroke-dashoffset: 148;
+        animation: line-anim 1.5s ease forwards 2.1s;
+    }
+    .header__title path:nth-child(3){
+        stroke-dasharray: 241;
+        stroke-dashoffset: 241;
+        animation: line-anim 1.5s ease forwards 2.4s;
+    }
+    .header__title path:nth-child(4){
+        stroke-dasharray: 280;
+        stroke-dashoffset: 280;
+        animation: line-anim 1.5s ease forwards 2.7s;
+    }
+    .header__title path:nth-child(5){
+        stroke-dasharray: 387;
+        stroke-dashoffset: 387;
+        animation: line-anim 1.5s ease forwards 1.5s;
+    }
+    .header__title path:nth-child(6){
+        stroke-dasharray: 226;
+        stroke-dashoffset: 226;
+        animation: line-anim 1.5s ease forwards 2.1s;
+    }
+    .header__title path:nth-child(7){
+        stroke-dasharray: 194;
+        stroke-dashoffset: 194;
+        animation: line-anim 1.5s ease forwards 1.8s;
+    }
+    .header__title path:nth-child(8){
+        stroke-dasharray: 335;
+        stroke-dashoffset: 335;
+        animation: line-anim 1.5s ease forwards 2.4s;
+    }
+    .header__title path:nth-child(9){
+        stroke-dasharray: 226;
+        stroke-dashoffset: 226;
+        animation: line-anim 1.5s ease forwards 2.1s;
+    }
+    .header__title path:nth-child(10){
+        stroke-dasharray: 242;
+        stroke-dashoffset: 242;
+        animation: line-anim 1.5s ease forwards 2.4s;
+    }
+}
 ///////////////////////////////////////////////////////
 
 
@@ -282,6 +335,10 @@
     #main-title{
         animation: fill 2.5s linear forwards 5.6s;
     }
+    .header__title svg{
+        fill: transparent;
+        animation: fill 2.5s linear forwards 5.6s;
+    }
     .header__bg{
         animation: show-bg 2s ease forwards 3.7s;
         &_mask{
@@ -291,13 +348,25 @@
     .header__bottom{
         animation: show-down 0.7s linear forwards 7s;
     }
+    .networks{
+        animation: networks 0.7s linear forwards 8s;
+    }
 }
 [data-aos="new-animation"] {
     opacity: 0;
     transition-property: transform, opacity;
-  
     &.aos-animate {
       opacity: 1;
+    }  
+}
+@keyframes nerworks{
+    0%{
+        opacity: 0;
     }
-  
-  }
+    90%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
