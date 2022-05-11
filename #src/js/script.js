@@ -24,11 +24,12 @@ window.addEventListener("load", function() {
     document.querySelector(".load").style.display = "none";
    
 })
+/** 
 const text = document.querySelectorAll(".header__title path")
 for(let i of text){
     console.log(i.getTotalLength())
 }
-
+*/
 // фиксация меню
 window.addEventListener("scroll", function () {
     const headerSize = this.document.querySelector(".header").offsetHeight;
