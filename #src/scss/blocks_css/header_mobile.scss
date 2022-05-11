@@ -205,7 +205,6 @@
       
         &__title{
             display: block;
-            margin-bottom: 30px;
         }
         .title{
             &__wrap{
@@ -230,7 +229,7 @@
             justify-content: center;
             margin: 0 auto;
             font-size: 1.2rem;
-            margin-bottom: 35px;
+            margin-bottom: calc(50% - 68.5px - 31px);
         }
         &__bottom{
             flex-direction: column;
@@ -436,8 +435,8 @@
         }
     }
     .video__wrap .description__title{
-        font-size: 3rem;
-        margin-bottom: 40px;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
     }
     .video__btn-block{
         & > div{
@@ -492,28 +491,3 @@
 
 
 
-/**
-.video__circle_3{
-        width: 160px;
-        height: 160px;
-    }
-    .video__circle_2{
-        width: 130px;
-        height: 130px;
-    }
-    .video__circle_1{
-        width: 100px;
-        height: 100px;
-    }
-    .video__btn{
-        width: 70px;
-        height: 70px;
-    }
-    .video__play{
-        width: 44px;
-        height: 24px;
-        border: 15px solid transparent;
-        border-left: 26px solid rgba(0,0,0,.9);
-        margin-left: 27px;
-    }
-*/

@@ -442,8 +442,6 @@ a {
           align-items: center;
   height: 100%;
   margin: auto;
-  /* 	width: 350px; */
-  /* 	font-size:26px; */
   font-family: Helvetica, sans-serif, Arial;
   -webkit-animation: load 1.2s infinite 0s ease-in-out;
           animation: load 1.2s infinite 0s ease-in-out;
@@ -455,8 +453,6 @@ a {
 @-webkit-keyframes load {
   0% {
     opacity: 0.08;
-    /*         font-size: 10px; */
-    /* 				font-weight: 400; */
     -webkit-filter: blur(5px);
             filter: blur(5px);
     letter-spacing: 3px;
@@ -466,8 +462,6 @@ a {
 @keyframes load {
   0% {
     opacity: 0.08;
-    /*         font-size: 10px; */
-    /* 				font-weight: 400; */
     -webkit-filter: blur(5px);
             filter: blur(5px);
     letter-spacing: 3px;
@@ -1567,32 +1561,6 @@ body {
   top: 0;
 }
 
-/**
-.video__circle_3{
-        width: 160px;
-        height: 160px;
-    }
-    .video__circle_2{
-        width: 130px;
-        height: 130px;
-    }
-    .video__circle_1{
-        width: 100px;
-        height: 100px;
-    }
-    .video__btn{
-        width: 70px;
-        height: 70px;
-    }
-    .video__play{
-        width: 44px;
-        height: 24px;
-        border: 15px solid transparent;
-        border-left: 26px solid rgba(0,0,0,.9);
-        margin-left: 27px;
-    }
-*/
-
 .description {
   min-height: 100vh;
   position: relative;
@@ -1643,6 +1611,7 @@ body {
   letter-spacing: -0.05em;
   position: relative;
   margin-bottom: 70px;
+  -webkit-text-fill-color: #fff;
 }
 
 .description__title_center {
@@ -3392,7 +3361,6 @@ body {
 
   .header__title {
     display: block;
-    margin-bottom: 30px;
   }
 
   .header .title__wrap {
@@ -3428,7 +3396,7 @@ body {
             justify-content: center;
     margin: 0 auto;
     font-size: 1.2rem;
-    margin-bottom: 35px;
+    margin-bottom: calc(50% - 68.5px - 31px);
   }
 
   .header__bottom {
@@ -3771,8 +3739,8 @@ body {
   }
 
   .video__wrap .description__title {
-    font-size: 3rem;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 
   .video__btn-block > div {
