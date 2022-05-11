@@ -1570,11 +1570,8 @@ body {
   letter-spacing: -0.05em;
   text-align: justify;
   margin: 20px 0 30px;
-  background: -o-radial-gradient(50.09% 50%, 50% 50%, #FF0000 0%, #B80000 100%);
-  background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+ 
+  color: #FF0000;
 }
 
 .description__title {
@@ -1599,11 +1596,7 @@ body {
 
 .description__title span {
   display: block;
-  background: -o-radial-gradient(50.09% 50%, 50% 50%, #FF0000 0%, #B80000 100%);
-  background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: #FF0000;
   position: absolute;
   top: 30px;
   line-height: 125%;
@@ -1615,11 +1608,7 @@ body {
   z-index: 2;
   max-width: 646px;
   font-size: 1.4rem;
-  background: -o-linear-gradient(353.59deg, #FFFFFF -0.4%, #5E5E5E 100%);
-  background: linear-gradient(96.41deg, #FFFFFF -0.4%, #5E5E5E 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: #ccc;
 }
 
 .description__text img {
@@ -2083,7 +2072,7 @@ body {
 
 .video__wrap .description__title {
   font-size: 5.5rem;
-  margin-bottom: -12px;
+ 
 }
 
 .video__hidden {
@@ -2249,11 +2238,8 @@ body {
           align-items: center;
   text-align: center;
   letter-spacing: -0.05em;
-  background: -o-radial-gradient(50% 50%, 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
-  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+ 
+  color: #ccc;
   margin-top: 100px;
   display: inline-block;
   position: relative;
@@ -2291,11 +2277,8 @@ body {
   font-size: 1.3rem;
   line-height: 110%;
   letter-spacing: 0.02em;
-  background: -o-radial-gradient(50% 0%, 180.91% 100%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
-  background: radial-gradient(180.91% 100% at 50% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+ 
+  color: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2597,12 +2580,7 @@ body {
   color: #fff;
   font-weight: 'Druk Text';
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: #869791;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2802,12 +2780,7 @@ body {
   text-align: center;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: #869791;
 }
 
 .accordion {
@@ -2910,6 +2883,7 @@ body {
   }
 }
 
+
 @media screen and (max-width: 1390px) {
   .description__title {
     font-size: 6rem;
@@ -2924,6 +2898,7 @@ body {
     padding: 0 90px;
   }
 }
+
 
 @media screen and (max-width: 1355px) {
   .description__title {
@@ -2957,12 +2932,30 @@ body {
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .description__title {
+    font-size: 4.7rem;
+}
+.description .star {
+  top: 64px;
+  width: 92px;
+}
+}
+
 @media screen and (max-width: 1130px) {
   .carousel__wrap {
     max-width: 850px;
   }
 }
-
+@media screen and (max-width: 1020px) {
+  .description__title {
+    font-size: 4rem;
+}
+.description .star {
+  top: 57px;
+  width: 92px;
+}
+}
 @media screen and (max-width: 980px) {
   .carousel__wrap {
     max-width: 85%;

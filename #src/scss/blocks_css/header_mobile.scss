@@ -121,6 +121,7 @@
     .public+.description{
         min-height: auto;
     }
+    
     .header{
         padding: 0 24px 100px;
         justify-content: space-between;
@@ -143,6 +144,7 @@
                 background-size: 80%;
             }
         }
+      
         &__title{
             display: block;
             margin-bottom: 30px;
