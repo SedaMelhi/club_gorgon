@@ -21,13 +21,13 @@
     }
 
     &__wrap {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        
+        
         margin-top: 70px;
         max-width: 750px;
         margin: 0 auto;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
     &__item {
@@ -151,25 +151,6 @@
     }
 }
 
-@media screen and (max-width: 970px) {
-    .team {
-        &__wrap {
-            padding: 0 10px;
-            margin-top: 50px;
-        }
-
-        &__item {
-            width: 80px;
-            height: 80px;
-            margin: 0 10px 10px;
-        }
-
-        &__photo {
-            width: 58px;
-            height: 58px;
-        }
-    }
-}
 
 
 

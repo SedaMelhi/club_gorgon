@@ -199,17 +199,30 @@
     .logo img{
         width: 90%;
     }
-
+    .focus__title{
+        text-align: center;
+        width: 100%;
+    }
+    .focus__line{
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
     .description{
         margin-bottom: 75px;
         &__title{
-            font-size: 3.2rem;
+            font-size: 4rem;
+            text-align: center;
+            span{
+                width: 100%;
+                margin: -12px auto;
+            }
         }
         .star{
             display: none;
         }
         &__wrap{
-            padding: 0 24px 0 52px;
+            padding: 0 52px 0 52px;
             flex-direction: column;
             > div{
                 width: 100%;
@@ -289,6 +302,29 @@
     .public .description__title{
         font-size: 3.2rem;
         margin-bottom: 40px;
+    }
+    .team{
+        &__wrap {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__item{
+            margin: 0;
+        }
+        &__photo {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .accordion {
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+    .focus__item{
+        color: #ccc;
+        background: none;
+    }
+    .description__text{
+        text-align: center;
     }
 }
 
