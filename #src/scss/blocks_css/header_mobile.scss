@@ -211,7 +211,7 @@
     .description{
         margin-bottom: 75px;
         &__title{
-            font-size: 4rem;
+            font-size: 3.2rem;
             text-align: center;
             span{
                 width: 100%;
@@ -243,6 +243,9 @@
             overflow: visible;
         }
     }
+    .description__subtitle{
+        text-align: center;
+    }
     .arts__text img{
         width: 80%;
     }
@@ -254,15 +257,20 @@
         gap: 12px 0;
     }
     .video__wrap .description__title{
-        font-size: 3.2rem;
-        margin-bottom: -6px;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
     }
     .video__block{
-        height: 280px;
+        height: 250px;
+    }
+    .video{
+        width: 80%;
+        margin: 0 auto;
     }
     .video__wrap{
         iframe{
-            height: 280px;
+            height: 250px;
+            margin: 0 auto;
         }
     }
     .video__circle_3{
@@ -325,6 +333,12 @@
     }
     .description__text{
         text-align: center;
+    }
+    .animation .header__bg{
+        animation: show-bg-mobile 2s ease forwards 3.7s;;
+    }
+    .footer.description__wrap{
+        padding: 0;
     }
 }
 
