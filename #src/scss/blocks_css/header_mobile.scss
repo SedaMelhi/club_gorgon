@@ -395,7 +395,12 @@
     .footer.description__wrap{
         padding: 0;
     }
-    
+    .description__block{
+        justify-content: flex-start;
+    }
+    .focus, .faq{
+        padding-top: 90px;
+    }
 }
 @media screen and (max-width: 560px){
     html{

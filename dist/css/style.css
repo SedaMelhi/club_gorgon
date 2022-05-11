@@ -3614,6 +3614,17 @@ body {
   .footer.description__wrap {
     padding: 0;
   }
+
+  .description__block {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .focus,
+  .faq {
+    padding-top: 90px;
+  }
 }
 
 @media screen and (max-width: 600px) {
