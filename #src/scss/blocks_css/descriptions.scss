@@ -25,7 +25,8 @@
         margin:20px 0 30px;
         background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
         background-clip: text;
-        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     &__title{
         font-size: 6.7rem;
@@ -46,7 +47,8 @@
         span{
             background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
             background-clip: text;
-            color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             position: absolute;
             bottom: -65%;
             display: flex;
@@ -63,8 +65,9 @@
         max-width: 646px;
         font-size: 1.4rem;
         background: linear-gradient(96.41deg, #FFFFFF -0.4%, #5E5E5E 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         background-clip: text;
-        color: transparent;
         img{
             width: 130px;
             margin: 20px auto;

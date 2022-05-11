@@ -1628,9 +1628,9 @@ body {
   margin: 20px 0 30px;
   background: -o-radial-gradient(50.09% 50%, 50% 50%, #FF0000 0%, #B80000 100%);
   background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .description__title {
@@ -1656,9 +1656,9 @@ body {
 .description__title span {
   background: -o-radial-gradient(50.09% 50%, 50% 50%, #FF0000 0%, #B80000 100%);
   background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   bottom: -65%;
   display: -webkit-box;
@@ -1682,8 +1682,8 @@ body {
   background: -o-linear-gradient(353.59deg, #FFFFFF -0.4%, #5E5E5E 100%);
   background: linear-gradient(96.41deg, #FFFFFF -0.4%, #5E5E5E 100%);
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .description__text img {
@@ -2216,9 +2216,9 @@ body {
   text-align: center;
   background: -o-radial-gradient(50.09% 50%, 50% 50%, #0b0a53 0%, #02019b 100%);
   background: radial-gradient(50% 50% at 50.09% 50%, #0b0a53 0%, #02019b 100%);
-  color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .public .description__text b {
@@ -2313,9 +2313,9 @@ body {
   letter-spacing: -0.05em;
   background: -o-radial-gradient(50% 50%, 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   margin-top: 100px;
   display: inline-block;
   position: relative;
@@ -2355,9 +2355,9 @@ body {
   letter-spacing: 0.02em;
   background: -o-radial-gradient(50% 0%, 180.91% 100%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
   background: radial-gradient(180.91% 100% at 50% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2662,9 +2662,9 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2867,9 +2867,9 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .accordion {
