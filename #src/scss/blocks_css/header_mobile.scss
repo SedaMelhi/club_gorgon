@@ -386,7 +386,6 @@
     }
     .focus__item{
         color: #ccc;
-        background: none;
     }
     .description__text{
         text-align: center;
@@ -466,6 +465,20 @@
     }
     .footer__text{
         margin-top: 20px;
+    }
+    .mint, .buyBtn{
+        width: 190px;
+        height: 47px;
+        border-radius: 12px;
+    }
+    .buyBtn_link, .mint_link{
+        height: calc(100% - 4px);
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 356px){
