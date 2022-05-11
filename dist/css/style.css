@@ -3738,6 +3738,12 @@ body {
     display: none;
   }
 
+  .header__bg {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
   .arts__wrap2 {
     grid-template-columns: 1fr 1fr;
   }
