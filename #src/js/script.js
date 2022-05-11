@@ -7,17 +7,18 @@ window.addEventListener("load", function() {
     body.classList.add("animation")
     
     //от 0 до 6666 увелечение 
-    const headerCount = document.querySelector(".header__count")
+    const headerCount = document.querySelectorAll(".header__count")
     let number = 6666
     
-    function countAnimation(i){
-        headerCount.innerHTML = `${i}`
+    function countAnimation(i, x){
+        headerCount[x].innerHTML = `${i}`
         if(i < number-31)
-            setTimeout(() => countAnimation(i + 31), 0.1)
+            setTimeout(() => countAnimation(i + 31, x), 0.1)
         else if(i < number)
-        setTimeout(() => countAnimation(i + 1), 0.1)
+        setTimeout(() => countAnimation(i + 1, x), 0.1)
     }
-    setTimeout(() => countAnimation(1), 8000)
+    setTimeout(() => countAnimation(1, 0), 8000)
+    setTimeout(() => countAnimation(1, 1), 8000)
     
     //убираем экран загрузки
     document.querySelector(".load").style.display = "none";

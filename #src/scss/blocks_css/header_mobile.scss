@@ -1,4 +1,11 @@
-
+.header__description{
+    .subtitle__mobile{
+        display: none;
+    }
+    i{
+        font-style: normal;
+    }
+}
 @media screen and (max-width: 1480px){
     .header{
         padding: 0 80px 40px;
@@ -60,6 +67,14 @@
     }
     .focus__item:nth-child(2){
         margin: 0 auto 15px;
+    }
+    .header__description{
+        .subtitle__mobile{
+            display: block;
+        }
+        .subtitle__pc{
+            display: none;
+        }
     }
     .focus{
         &__list {
@@ -166,7 +181,7 @@
             margin: 0;
             order: 1;
             i{
-                display: none;
+                display: block;
             }
         }
         &__tint{
@@ -314,6 +329,7 @@
     .team{
         &__wrap {
             grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
         }
         &__item{
             margin: 0;
@@ -340,6 +356,7 @@
     .footer.description__wrap{
         padding: 0;
     }
+    
 }
 
 @media screen and (max-width: 320px){
