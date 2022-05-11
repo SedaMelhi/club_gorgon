@@ -3625,6 +3625,12 @@ body {
   .faq {
     padding-top: 90px;
   }
+
+  .header__bg {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 600px) {

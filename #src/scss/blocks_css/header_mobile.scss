@@ -401,6 +401,9 @@
     .focus, .faq{
         padding-top: 90px;
     }
+    .header__bg{
+        transform: scale(1);
+    }
 }
 @media screen and (max-width: 560px){
     html{
