@@ -211,7 +211,7 @@
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                justify-content: center;
                svg{
                     width: 90%;
                     display: flex;
@@ -229,7 +229,7 @@
             justify-content: center;
             margin: 0 auto;
             font-size: 1.2rem;
-            margin-bottom: calc(50% - 68.5px - 31px);
+            margin-bottom: 35px;
         }
         &__bottom{
             flex-direction: column;
@@ -285,7 +285,7 @@
     }
    
     .description{
-        margin-bottom: 100px;
+        padding-bottom: 90px;
         &__text{
             max-width: 100%;
         }
@@ -467,11 +467,11 @@
         margin-top: 20px;
     }
     .mint, .buyBtn{
-        max-width: 225px;
-        height: 52px;
+        max-width: 235px;
+        height: 54px;
         border-radius: 13px;
     }
-    .buyBtn_link, .mint_link{
+    .buyBtn_link, .mint_link, .focus .mint_link{
         height: calc(100% - 4px);
         line-height: 1;
         display: flex;
