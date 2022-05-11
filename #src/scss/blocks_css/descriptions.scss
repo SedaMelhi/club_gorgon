@@ -44,13 +44,15 @@
             }
         }
         span{
-            display: block;
             background: radial-gradient(50% 50% at 50.09% 50%, #FF0000 0%, #B80000 100%);
             background-clip: text;
             color: transparent;
             position: absolute;
-            top: 30px;
-            line-height: 125%;
+            bottom: -65%;
+            display: flex;
+            align-items: flex-end;
+            line-height: 1.4;
+            justify-content: center;
         }
     }
     
@@ -72,10 +74,8 @@
         }
     }
     .star{
-        position: absolute;
-        top: 90px;
-        right: 30px;
         width: 140px;
+        margin-bottom:4%;
     }
     &__block{
         font-size: 1.4rem;
