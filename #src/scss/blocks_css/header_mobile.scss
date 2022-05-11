@@ -467,9 +467,9 @@
         margin-top: 20px;
     }
     .mint, .buyBtn{
-        width: 210px;
-        height: 50px;
-        border-radius: 12px;
+        max-width: 225px;
+        height: 52px;
+        border-radius: 13px;
     }
     .buyBtn_link, .mint_link{
         height: calc(100% - 4px);
@@ -477,8 +477,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 12px;
-        font-size: 1.2rem;
+        border-radius: 13px;
+        font-size: 1.3rem;
     }
 }
 @media screen and (max-width: 356px){
