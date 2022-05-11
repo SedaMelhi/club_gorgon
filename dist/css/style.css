@@ -3407,6 +3407,8 @@ body {
 
   .header__title {
     display: block;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .header .title__wrap {
@@ -3424,7 +3426,7 @@ body {
   }
 
   .header .title__wrap svg {
-    width: 90%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

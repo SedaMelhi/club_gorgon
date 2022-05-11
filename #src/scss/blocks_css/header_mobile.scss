@@ -247,15 +247,18 @@
       
         &__title{
             display: block;
+            width: 90%;
+            margin: 0 auto;
         }
         .title{
+            
             &__wrap{
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                svg{
-                    width: 90%;
+                    width: 100%;
                     display: flex;
                     margin: 0 auto;
                    
