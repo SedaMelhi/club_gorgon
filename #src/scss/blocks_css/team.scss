@@ -11,14 +11,11 @@
         color: #fff;
         font-weight: 'Druk Text';
         text-transform: uppercase;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         display: flex;
         max-width: 500px;
         justify-content: space-between;
         margin: 0 auto 80px;
+        color: rgba(255, 255, 255, 0.3);
     }
 
     &__wrap {
@@ -185,10 +182,7 @@
         text-align: center;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: rgba(255, 255, 255, 0.3);
     }
 }
 

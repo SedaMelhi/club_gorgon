@@ -78,10 +78,7 @@
         align-items: center;
         text-align: center;
         letter-spacing: -0.05em;
-        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: rgba(255, 255, 255, 0.8);
         margin-top: 100px;
         display: inline-block;
         position: relative;
@@ -114,10 +111,7 @@
         font-size: 1.3rem;
         line-height: 110%;
         letter-spacing: 0.02em;
-        background: radial-gradient(180.91% 100% at 50% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: rgba(255, 255, 255, 0.6);
         display: flex;
         align-items: center;
         justify-content: center;
